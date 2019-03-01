@@ -7,93 +7,154 @@
 .grid 
     display: grid
 
-.main-header
+.navbar 
+    .center-block-main 
+        .Logo-Header 
+            margin: 0 0 0 40px
+            img, p 
+                float: left
+      
+        p 
+            margin: 27px 0 0 8px
+            color: $dark
+            opacity: 0.7
+      
+    
+        .header-main 
+            padding: 12px 0 0 160px
+            opacity: 0.7
+            .menu 
+                margin-left: 300px
+      
+        nav ul li 
+            float: left
+            list-style: none
+            a 
+                color: $light
+                text-decoration: none
+                padding-left: 40px
+                &:hover
+                    color: orange
+     
+
+
+
+.content-top
+    
+    margin: 45px 25px
+    background-size: cover
+    background-position: center  
+.nav
+    display: grid
+    grid-template-columns: 100px minmax(200px, auto)
+    
+
+    img
+        height: 100px
+    ul
+        display: grid
+        grid-template-columns: repeat(5, 1fr)
+        padding: 30px
+// .phone 
+//     padding: 30px
+//     float: right
+.logo
+    height: 250px
+
+h1
     min-height: 100vh
     background-size: cover
     background-position: center
     position: relative
     align-content: center
-    &::before
-        content: ''
-        position: absolute
-        top: 0
-        left: 0
-        right: 0
-        bottom: 0
-        background-color: $dark
-        opacity: .92
+.main-header
 
-.header-content
-    z-index: 1
-    color: #ffffff
-    text-align: center
-    padding: 60px $gutter 
-    h1
-        font-size: 60px
-        font-family: intro-grid, sans-serif
-        font-weight: normal
-        margin: 20px 0px
-        line-height: 1.5
-    .button
-        margin: 10px
+    min-height: 100vh
+    background-size: cover
+    background-position: center
+    position: relative
+    // align-content: center
+//     &::before
+//         content: ''
+//         position: absolute
+//         top: 0
+//         left: 0
+//         right: 0
+//         bottom: 0
+//         background-color: $dark
+//         opacity: .92
+
+// .header-content
+//     z-index: 1
+//     color: #ffffff
+//     text-align: center
+//     padding: 60px $gutter 
+//     h1
+//         font-size: 60px
+//         font-family: intro-grid, sans-serif
+//         font-weight: normal
+//         margin: 20px 0px
+//         line-height: 1.5
+//     .button
+//         margin: 10px
 
 
-.button
-	display: inline-block
-	border: none
-	color: #fff
-	text-decoration: none
-	background-color: $accent
-	padding: 10px 60px
-	font-size: 20px
-	font-weight: 800
-	border-radius: 2px
-	text-align: center
-	position: relative
-	outline: none
-	transition: background-color .1s ease
-	cursor: pointer
-	&::after
-		transition: background-color .2s ease
-		position: absolute
-		content: ''
-		height: 4px
-		bottom: 0
-		width: 100%
-		background-color: darken($accent, 50%)
-		opacity: .18
-		border-bottom-left-radius: 2px
-		border-bottom-right-radius: 2px
-		left: 0
-	&:focus, &:hover
-		text-decoration: none
-		color: #fff
-	&:hover
-		background-color: lighten($accent, 5%)
-		&::after
-			opacity: .22
-	&:active
-		background-color: darken($accent, 5%)
-		&::after
-			opacity: .3
+// .button
+// 	display: inline-block
+// 	border: none
+// 	color: #fff
+// 	text-decoration: none
+// 	background-color: $accent
+// 	padding: 10px 60px
+// 	font-size: 20px
+// 	font-weight: 800
+// 	border-radius: 2px
+// 	text-align: center
+// 	position: relative
+// 	outline: none
+// 	transition: background-color .1s ease
+// 	cursor: pointer
+// 	&::after
+// 		transition: background-color .2s ease
+// 		position: absolute
+// 		content: ''
+// 		height: 4px
+// 		bottom: 0
+// 		width: 100%
+// 		background-color: darken($accent, 50%)
+// 		opacity: .18
+// 		border-bottom-left-radius: 2px
+// 		border-bottom-right-radius: 2px
+// 		left: 0
+// 	&:focus, &:hover
+// 		text-decoration: none
+// 		color: #fff
+// 	&:hover
+// 		background-color: lighten($accent, 5%)
+// 		&::after
+// 			opacity: .22
+// 	&:active
+// 		background-color: darken($accent, 5%)
+// 		&::after
+// 			opacity: .3
     
-.button-gray
-        background-color: $gray
-        &::after
-            background-color: darken($gray, 15%)
-        &::hover
-            background-color: lighten($gray, 5%)
-            &::after
-                opacity: .22
-        &::active
-            background-color: darken($gray, 5%)
-            &::after
-                opacity: .32
+// .button-gray
+//         background-color: $gray
+//         &::after
+//             background-color: darken($gray, 15%)
+//         &::hover
+//             background-color: lighten($gray, 5%)
+//             &::after
+//                 opacity: .22
+//         &::active
+//             background-color: darken($gray, 5%)
+//             &::after
+//                 opacity: .32
         
 .portfolio-section
-    padding: 10px
+    padding: 5px
     grid-template-columns: repeat(4, 1fr)
-    grid-gap: 10px
+    grid-gap: 5px
 
 .portfolio-item 
     min-height: 32vh
@@ -163,33 +224,6 @@
 .ready-right
     padding-left: 40px
 
-
-.form-section
-    padding: 30px 0
-    background-color: $dark
-    input   
-        background-color: lighten($dark, 6%)
-    form
-        grid-gap: 20px
-        grid-template-columns: repeat(4, 1fr)
-    .button
-        font-size: 17px
-        padding: 11px
-        width: 100%
-
-input, textarea
-    border: none
-    padding: 15px 20px
-    width: 100%
-    font-family: Arial, sans-serif
-    font-style: italic
-    outline: none
-    transition: background-color .25s ease
-    &:focus
-        background-color: $light
-    &::placeholder
-        color: lighten($dark, 20%)
-
 .section-blog
     h2 
         margin: 0 0 50px 0
@@ -232,5 +266,115 @@ input, textarea
             transition:  color .25s ease
         p 
             margin: 20px 0 0 0
+
+
+//COMPANY SECTION//
+
+.company-logo
+    
+    margin: 0px auto
+    width: 100%
+    height: 250px
+    grid-template-columns: repeat(4, 1fr)
+    &__item
+        position: relative
+        margin-bottom: 30px
+        margin-top: 10px
+        >img
+            width: 100%
+            height: auto
+            position: absolute
+    
+    
+//FORM SECTION
+
+.form-section
+    background-color: $light 
+    padding: 30px
+    grid-template-columns: repeat(3, 1fr)
+    grid-gap: 10px
+    &__left
+        border-right: 1px solid #dadada
+        min-width: 450px
+        max-width: 100%
+        padding: 60px 60px 60px 60px
+    input   
+        background-color: lighten($dark, 55%)
+    form
+        grid-gap: 20px
+        grid-template-columns: repeat(1, 1fr)
+
+    .form-input__button
+        font-size: 17px
+        padding: 11px
+        width: 150px
+        &:hover
+            color: orange
+    .form-item
+        &:nth-child(2)
+            grid-column: 2 / 4
+    &__right
+        padding: 0 0 0 20px
+
+input, textarea
+    border: none
+    padding: 15px 20px
+    width: 100%
+    font-family: Arial, sans-serif
+    font-style: italic
+    outline: none
+    transition: background-color .25s ease
+    &:focus
+        background-color: #ffffff
+    &::placeholder
+        color: lighten($dark, 20%)
+
+
+
+
+// FOOTER SECTION//
+    
+.footer-section
+    height: 150px
+    background-color: $dark
+    grid-template-columns: repeat(2, 1fr)
+.footer-item
+    
+    color: $light
+    padding: 20px
+    margin: 10px
+    
+      
+.footer-container
+    background-color: $dark
+    display: flex
+    justify-content: space-around
+    color: $light
+    padding: 20px 0 20px 0px
+    &__logo
+        p
+            opacity: .82
+    
+  
+    &__contacts
+        p
+            opacity: .82
+    
+    &__social
+        display: flex
+        flex-direction: column
+        align-items: center
+        &_links
+            list-style: none
+            a
+                color: $light
+                opacity: $dark
+                &:hover
+                    color: orange
+      
+
+
+   
+
 
 @import "media" // Прописуються завжди в кінці
