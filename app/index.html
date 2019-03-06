@@ -9,79 +9,82 @@
 	<meta name="description" content="">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
 	<link rel="shortcut icon" href="img/articon.png" type="image/x-icon">
 	<link rel="stylesheet" href="/maps/documentation/javascript/cgc/demos.css">
-	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
-		integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
-	<style>
-		body {
-			opacity: 0;
-			overflow-x: hidden;
-		}
-
-		html {
-			background-color: #fff;
-		}
-	</style>
-	<style>
-		/* Always set the map height explicitly to define the size of the div
-		 * element that contains the map. */
-		#map {
-			height: 100%;
-		}
-
-		/* Optional: Makes the sample page fill the window. */
-		html,
-		body {
-			height: 100%;
-			margin: 0;
-			padding: 0;
-		}
-		
-	</style>
+	<link href="https://fonts.googleapis.com/css?family=Titillium+Web:300,400,600,700" rel="stylesheet">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 
 </head>
 
 <body>
 
 
-	<header class="main-header grid" style="background-image: url(img/spongebob-pop-art-interior-decor.jpg);">
-		<div class="header-content">
-			<div class="content-top">
-				<nav class="navbar navbar-expand-lg  sticky-top backgroundcolor-header">
-					<div class="center-block-main">
-						<div class="logo-header">
-							<img src="img/articon.png" style="width: 100px" height="100px" />
-							<p></p>
-						</div>
-						<div class="header-main clearfix">
-							<nav>
-								<ul class="menu">
-									<li><a href="#" id="Home" class="tabcontent">PROJECTS</a></li>
-									<li><a href="#" id="tab2">PROCESS</a></li>
-									<li><a href="#" id="tab3">ABOUT</a></li>
-									<li><a href="#">TEAM</a></li>
+	<header class="wrapper">
 
-									<li><a href="#">CONTACT</a></li>
-								</ul>
-							</nav>
-						</div>
-					</div>
-				</nav>
+		<nav>
+
+			<div class="logo"><h1>ARTDESIGN</h1></div>
+
+			<ul class="menu">
+				<li><a href="#">Home</a></li>
+				<li><a href="#">Project</a></li>
+				<li><a href="#">About</a></li>
+				<li><a href="#">Team</a></li>
+				<li><a href="#">Contact</a></li>
+			</ul>
+
+			<ul class="social">
+				<li><a href="#"><i class="fa fa-facebook"></i></a></li>
+				<li><a href="#"><i class="fa fa-instagram"></i></a></li>
+				
+			</ul>
+		</nav>
+
+		<div class="slogan">
+			<div class="text">
+				<p>Hello From Qruitos Team</p>
+				<h1>Interior & Decor </br> Studio</h1>
+				<a href="#">See Project</a>
+
 			</div>
 
-			<!-- <div class="content-center">
-			<h1>Just art design</h1>
-			<!-- <div class="header-button">
-				<a href="#" class="button">Follow</a>
-				<a href="#" class="button button-gray">Go Home</a>
-			</div> -->
-		</div> -->
+			<div class="counter">
+				<h2>0<span class="newCount"></span>/03</h2>
+			</div>
+
+			<div class="indicator">
+				<ul>
+					<li class="active"></li>
+					<li></li>
+					<li></li>
+				</ul>
+			</div>
+
+			<div class="ftheader">
+				<div class="list">
+					<ul>
+						<li>Dedicated </br> Team</li>
+						<li>Fast Delivery </br> Time</li>
+						<li>Affordable </br> Price</li>
+					</ul>
+				</div>
+			</div>
+
+			<div class="control">
+				<div class="symbole">
+					<a href="#" class="prev"><i class="fa fa-angle-left"></i></a>
+					<a href="#" class="next"><i class="fa fa-angle-right"></i></a>
+				</div>
+			</div>
+
+
 		</div>
 
 	</header>
 
 	<section class="portfolio-section grid">
+		
 
 		<div class="portfolio-item grid" style="background-image: url(img/1.jpg);"><span>Проект #</span></div>
 		<div class="portfolio-item grid" style="background-image: url(img/2.jpg);"><span>Проект #</span></div>
@@ -208,19 +211,7 @@
 		</div>
 
 	</section>
-	<!-- <footer class="footer-section grid">
-		<div class="footer-item grid">
-			<p><i class="fab fa-instagram fa-3x"></i></p>
-			<p><i class="fab fa-facebook fa-3x"></i></p>
-		</div>
-		<div class="footer-item grid">
-			<p>+380987178751</p>
-			<p>2019</p>
-		</div>
-		
-		
 
-	</footer> -->
 	<footer class="footer-container">
 		<div class="footer-container__logo">
 			<img src="img/articon.png" style="width: 150px" height="150px" />
@@ -250,6 +241,7 @@
 		</div>
 	</footer>
 	<link rel="stylesheet" href="sass/main.css">
+	<script src="js/main.js"></script>
 	<script src="js/scripts.min.js"></script>
 	<script src="./libs/jquery/dist/jquery.min.js"></script>
 	
