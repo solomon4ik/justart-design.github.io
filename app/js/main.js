@@ -15,7 +15,7 @@ nextImg.addEventListener('click', function (){
         imgNew = 1;
     }
 
-    imgMain.style.background = 'url(../img/${imgNew}.jpg)';
+    imgMain.style.background = 'url(../img/${imgNew}.jpg")';
     imgMain.style.backgroundSize = 'cover';
     imgMain.style.backgroundPosition = 'center';
     newCount.innerText = imgNew;

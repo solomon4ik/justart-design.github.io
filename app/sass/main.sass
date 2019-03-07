@@ -29,6 +29,9 @@ ul
     list-style: none  
         
 
+
+
+
 .wrapper
     height: 100vh
     width: 100vw
@@ -64,14 +67,18 @@ ul
             text-align: center
             li
                 display: inline-block
-                margin: 8px 25px 0 
+                margin: 8px 25px 0
+                
                 a
                     text-decoration: none
                     color: #fff
                     text-transform: uppercase
                     text-shadow: 0 0 4px rgba(0,0,0,.1)
-                &:hover
-                    text-decoration: underline
+                    &:hover
+                        text-decoration: underline
+                        color: orange
+                    
+                    
         ul.social
             display: flex
             justify-content: flex-end
@@ -83,9 +90,10 @@ ul
                     color: #ffffff
                     text-shadow: 0 0 4px rgba(0,0,0,.1)
                     transition: all 250ms
-                &:hover
-                    
-                    opacity: .8
+                    &:hover
+                        opacity: .8
+                        color: orange
+
     .slogan
         grid-column: 1 / -1
         display: grid
@@ -94,7 +102,7 @@ ul
         .text
             display: grid
             grid-template-columns: 1fr 2fr
-            p, h1, a
+            p, h1, a, h2
                 grid-column: 2 / 3
             h1
                 font-size: 3.2rem
@@ -112,7 +120,7 @@ ul
             justify-content: flex-end
             align-items: center
             ul
-                margin: 0
+                margin-right: 30px
                 padding: 0
                 li
                     width: 5px
@@ -150,14 +158,18 @@ ul
                     grid-column: 1 / 3
                     background: rgba(255,255,255,.5)
                     height: 80px
-                    padding-left: 150px
+                    padding-left: 50px
                     display: flex
                     align-items: center
+                    border-radius: 15px
                     li  
                         color: #000000
-                        margin-right: 120px
+                        margin-right: auto
                         font-weight: bold
                         cursor: pointer
+                        &:hover
+                            color: orange
+                        
         .control
             display: grid
             grid-template-columns: 1fr
@@ -189,11 +201,67 @@ ul
                         text-align: center
                         font-size: 1.4rem
                     &:hover
-                        background: rgb(78,78,78)
+                        background: orange
                         border: 1px solid transparent
 
-
-
+.wrapper-project
+    height: 15vh
+    width: 100vw
+    background: $dark
+    background-size: cover
+    background-position: center 
+    padding: 30px 30px 0 30px
+    display: grid
+    grid-template-columns: 1fr 2fr 1fr
+    grid-template-rows: 150px
+    position: relative
+  
+    &::after
+        content: ''
+        display: block  
+        width: 100%
+        height: 100%
+        background: rgba(0,0,0,.5)
+        position: absolute
+        top: 0
+        left: 0
+        z-index: -1
+    nav
+        grid-column: 1 / -1
+        display: grid
+        grid-template-columns: 1fr 2fr 1fr
+        .logo
+            color: #fff
+            letter-spacing: 3px
+        ul.menu
+            padding: 0
+            margin: 0
+            text-align: center
+            li
+                display: inline-block
+                margin: 8px 25px 0 
+                a
+                    text-decoration: none
+                    color: #fff
+                    text-transform: uppercase
+                    text-shadow: 0 0 4px rgba(0,0,0,.1)
+                    &:hover
+                        color: orange
+                        text-decoration: underline
+        ul.social
+            display: flex
+            justify-content: flex-end
+            margin: 0
+            padding: 0
+            li
+                margin: 8px 25px 0
+                a
+                    color: #ffffff
+                    text-shadow: 0 0 4px rgba(0,0,0,.1)
+                    transition: all 250ms
+                &:hover
+                    color: orange
+                    opacity: .8
 
 
 
@@ -345,11 +413,38 @@ ul
 //             background-color: darken($gray, 5%)
 //             &::after
 //                 opacity: .32
+
+.project-item
+    height: 230px
+    width: 100vw
+    background: $light
+    background-size: cover
+    background-position: center 
+    padding: 30px 30px 0 30px
+    display: grid
+    p
+        font-size: 3.4rem
+        letter-spacing: 3px
+        text-align: center
+        align-items: center
+        color: black
+       
+    h2
+        text-align: center
+        align-items: center
+        color: #555555
+        letter-spacing: 1px
         
+
+
+
+
 .portfolio-section
     padding: 5px
     grid-template-columns: repeat(4, 1fr)
     grid-gap: 5px
+    
+    
 
 .portfolio-item 
     min-height: 32vh
@@ -364,8 +459,14 @@ ul
     position: relative
     transition: color .5s ease
     cursor: pointer
-    &:hover
+    
+    i   
         color: $accent
+        display: none
+    &:hover
+        i
+            display: inline
+            color: $accent
         &::before
             opacity: .85
     &::before
@@ -390,13 +491,31 @@ ul
         grid-row: 2 / 4
 
 
+.portfolio-all
+    height: 60px
+   
+    a
+        text-align: center
+        text-decoration: none
+        text-transform: uppercase
+        padding: 15px
+        letter-spacing: 3px
+        color: $dark
+        background-color: rgba(191, 191, 191,.8)
+        &:hover
+            background-color: orange
+       
+
+        
+
+
 .container
-    max-width: 1200px
+    max-width: 1400px
     margin: auto
     padding: 0 $gutter
 
 .landing-section
-    padding: 80px 0px
+    padding: 40px 0px
     h2
         font-size: 34px
         font-weight: 800
@@ -405,6 +524,17 @@ ul
 
 .section-ready
     background-color: $light
+    &__team
+        margin: 10px
+        
+        p
+            margin-right: 10%
+
+            text-align: right
+            font-size: 3.4rem
+            letter-spacing: 3px
+            border-bottom: 1px solid #000
+            
     .container
         grid-template-columns: 1fr 1fr
 
@@ -412,12 +542,20 @@ ul
     border-right: 1px solid #dadada
     font-size: 18px
     padding: 60px 60px 60px 0px
+    min-width: 400px
     h2
         margin-top: 0
         margin-bottom: 40px
 
 .ready-right
     padding-left: 40px
+    grid-template-columns: repeat(2, 1fr)
+    grid-gap: 5px
+    &__team
+        padding: 0
+        padding: $gutter
+        img
+            width: 100%
 
 .section-blog
     h2 
@@ -469,7 +607,7 @@ ul
     
     margin: 0px auto
     width: 100%
-    height: 250px
+    height: 300px
     grid-template-columns: repeat(4, 1fr)
     &__item
         position: relative
@@ -504,7 +642,7 @@ ul
         padding: 11px
         width: 150px
         &:hover
-            color: orange
+           background-color: orange
     .form-item
         &:nth-child(2)
             grid-column: 2 / 4
@@ -567,6 +705,20 @@ input, textarea
                 &:hover
                     color: orange
       
+
+
+
+
+    
+
+
+
+
+
+
+
+
+
 
 
    
