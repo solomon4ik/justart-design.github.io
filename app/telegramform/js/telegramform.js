@@ -9,7 +9,7 @@ $(document).ready(function () {
             url: './telegramform/php/send-message-to-telegram.php',
             data: formNm.serialize(),
             success: function (data) {
-              // Вывод сообщения об успешной отправке
+              // Вивід повідомлення про успішну відправку
               message.html(data);
               formTitle.css("display","none");
               setTimeout(function(){
@@ -19,7 +19,7 @@ $(document).ready(function () {
               }, 3000);
             },
             error: function (jqXHR, text, error) {
-                // Вывод сообщения об ошибке отправки
+                // Вивід повідолення про помилку
                 message.html(error);
                 formTitle.css("display","none");
                 setTimeout(function(){

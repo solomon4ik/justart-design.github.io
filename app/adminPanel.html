@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Admin Panel</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <meta name="description" content="">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+	<link rel="shortcut icon" href="img/articon.png" type="image/x-icon">
+	
+	<link href="https://fonts.googleapis.com/css?family=Titillium+Web:300,400,600,700" rel="stylesheet">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	
+
+</head>
+<body>
+        <header class="wrapper-project">
+        
+            <nav>
+        
+                <div class="logo">
+                    <h1>ARTDESIGN</h1>
+                </div>
+        
+                <ul class="menu">
+                    <li><a href="index.html">Головна</a></li>
+                    <li><a href="#">Проекти</a></li>
+                    <li><a href="#">Послуги</a></li>
+                    <li><a href="#">Team</a></li>
+                    <li><a href="#">Контакти</a></li>
+                </ul>
+        
+                <ul class="social">
+                    <li><a href="https://www.facebook.com/justartdesignstudio/" target="_blank"><i
+                                class="fa fa-facebook"></i></a></li>
+                    <li><a href="https://www.instagram.com/justart_design/" target="_blank"><i class="fa fa-instagram"></i></a>
+                    </li>
+                    <li><a href="#" target=""><i class="fas fa-user-alt" id="greeting"></i></i></a>
+                    </li>
+                    
+                </ul>
+            </nav>
+        
+        
+        
+        </header>
+
+<div class="container">
+    
+    <div class="col-6" style="margin: 0 auto;">
+        <h2>Форма додавання проекту </h2>
+        <div class="form-group">
+            <label class="custom-bold" for="exampleInputEmail1">Введіть назву об'єкта:</label>
+            <input id="name" class="form-control" type="text" placeholder="напр.: Вітальня в заміському будинку"  style="margin:5px">
+        </div>
+        <div class="form-group">
+            <label class="custom-bold" for="exampleInputEmail1">Введіть розташування:</label>
+            <input id="location" class="form-control" type="text" placeholder="(місто, вулиця)" style="margin:5px">
+        </div>
+        <div class="form-group">
+            <label class="custom-bold" for="exampleInputEmail1">Введіть площу:</label>
+            <input id="area" class="form-control" type="text" placeholder="площа" style="margin:5px">
+        </div>
+        <div class="form-group">
+            <label class="custom-bold" for="exampleInputEmail1">Вкажіть категорію відповідно до площі:</label>
+            <br>
+            <div class="form-check-inline">
+                <label class="form-check-label category-a" for="radio1">
+                    <input type="radio" class="form-check-input" id="radio1" name="optradio" value="category-a" checked> 0-40 м<sup>2</sup>
+                </label>
+            </div>
+            <div class="form-check-inline">
+                <label class="form-check-label category-b" for="radio2">
+                    <input type="radio" class="form-check-input" id="radio2" name="optradio" value="category-b"> 40-60 м<sup>2</sup>
+                </label>
+            </div>
+            <div class="form-check-inline">
+                <label class="form-check-label category-c" for="radio3">
+                    <input type="radio" class="form-check-input" id="radio3" name="optradio" value="category-c"> 60-90 м<sup>2</sup>
+                </label>
+            </div>
+            <div class="form-check-inline">
+                <label class="form-check-label category-d" for="radio4">
+                    <input type="radio" class="form-check-input" id="radio4" name="optradio" value="category-d">  90-120 м<sup>2</sup>
+                </label>
+            </div>
+        </div>
+        <div class="form-group">
+            <label class="custom-bold" for="exampleInputEmail1">Загрузити фонове зображення:</label>
+                <div class="input-group mb-3">
+                    <div class="custom-file">
+                        <input type="file" class="custom-file-input" id="inputGroupFile02">
+                        <label class="custom-file-label" for="inputGroupFile02" aria-describedby="inputGroupFileAddon02">Виберіть файл</label>
+                    </div>
+                </div>
+                <div class="input-group-append">
+                    <span class="input-group-text" id="inputGroupFileAddon02">Завантажити</span>
+                </div>
+        </div>
+    <button id="storyBtn" type="button"  class="btn btn-primary">Зберегти проект</button>
+    <button id="gotoHomePage" type="button"  class="btn btn-success">Переглянути проекти</button>
+    </div>
+    <h4>Збережені проекти: </h4>
+    <div class="" id="cont"></div>
+        
+        
+</div>
+
+
+
+
+
+
+<link rel="stylesheet" href="sass/main.css">
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+<script src="js/admin.js"></script>
+</body>
+</html>

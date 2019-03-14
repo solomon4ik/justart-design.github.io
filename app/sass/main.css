@@ -1,4 +1,3 @@
-@import url(c:\Users\solomon\Documents\justart.design_web-site\app\libs\normalize-css\normalize.css);
 @font-face {
   font-family: 'raleway-grid';
   src: url("../fonts/RalewayRegular.woff") format("woff");
@@ -170,6 +169,7 @@ ul {
 }
 
 .wrapper nav ul.social li a {
+  text-decoration: none;
   color: #ffffff;
   text-shadow: 0 0 4px rgba(0, 0, 0, 0.1);
   -webkit-transition: all 250ms;
@@ -888,6 +888,19 @@ input::placeholder, textarea::placeholder {
 
 .footer-container__social_links a:hover {
   color: orange;
+}
+
+.container {
+  padding-top: 20px;
+}
+
+.container .col-6 h2 {
+  padding: 10px;
+  text-align: center;
+}
+
+.container div .custom-bold {
+  font-weight: bold;
 }
 
 /*==========  Desktop First  ==========*/
