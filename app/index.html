@@ -12,39 +12,88 @@
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
 	<link rel="shortcut icon" href="img/articon.png" type="image/x-icon">
 	<!-- <link rel="stylesheet" href="/maps/documentation/javascript/cgc/demos.css"> -->
-	<link href="https://fonts.googleapis.com/css?family=Titillium+Web:300,400,600,700" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,500,500i,700,700i,900|ZCOOL+XiaoWei" rel="stylesheet">
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-	
+	<!-- Add the slick-theme.css if you want default styling -->
+	<link rel="stylesheet" type="text/css" href="libs/slick/slick.css"/>
+	<!-- Add the slick-theme.css if you want default styling -->
+	<link rel="stylesheet" type="text/css" href="libs/slick/slick-theme.css"/>
+
 </head>
 
 <body>
+	<div id="modal-wrapper" class="modal">
 
+		<form class="modal-content animate animate-down" action="telegramform/php/send-message-to-telegram.php" method="POST" id="form-contact">
 
+			<div class="imgcontainer">
+				<span onclick="document.getElementById('modal-wrapper').style.display='none'" class="close-popup"
+					title="Закрити вікно">&times;</span>
+				<img src="img/articon.png" alt="Avatar" class="avatar">
+				<h4 style="text-align:center">Just Art Design</h4>
+				<h1 style="text-align:center">Замовити дзвінок</h1>
+			</div>
+
+			<div class="container-form">
+				<p class="form-message"></p>
+				<input type="text" name="name" class="form-input__name" placeholder="Ім'я" required>
+				<input type="tel" name="phone" class="form-input__phone" placeholder="Телефон" required>
+				<button type="submit" class="form-input__button">Надіслати</button>
+				
+				
+			</div>
+
+		</form>
+
+	</div>
+	<div id="modal-login" class="modal">
+	
+		<div class="modal-content animate animate-down" >
+	
+			<div class="imgcontainer">
+				<span onclick="document.getElementById('modal-login').style.display='none'" class="close-popup"
+					title="Закрити вікно">&times;</span>
+				<h1 style="text-align:center">LOGIN</h1>
+			</div>
+	
+			<div class="container-form">
+				
+				<input type="text" name="name" class="form-control" id="exampleInputEmail1" placeholder="login" required>
+				<input type="tel" name="phone" class="form-control" id="exampleInputPassword1" placeholder="password" required>
+				<button type="submit"  id="submit-login">GO</button>
+	
+	
+			</div>
+	
+		</div>
+	
+	</div>
+	
 	<header class="wrapper">
-
+			
 		<nav>
 
-			<div class="logo"><h1>JUSTART DESIGN</h1></div>
+			<div class="logo"><h1>JUST ART DESIGN</h1></div>
 
 			<ul class="menu">
-				<li><a href="#">Головна</a></li>
+				<li><a href="index.html">Головна</a></li>
 				<li><a href="project.html">Проекти</a></li>
 				<li><a href="#">Послуги</a></li>
-				<li><a href="#">Team</a></li>
-				<li><a href="#">Контакти</a></li>
+				<li><a href="o-studii.html" target="_blank">Про нас</a></li>
+				<li><a href="contact.html">Контакти</a></li>
 			</ul>
 
 			<ul class="social">
 				<li><a href="https://www.facebook.com/justartdesignstudio/" target="_blank"><i class="fa fa-facebook"></i></a></li>
 				<li><a href="https://www.instagram.com/justart_design/" target="_blank"><i class="fa fa-instagram"></i></a></li>
-				<li><a class="cd-signin" href="logIn.html" target="_blank"><i class="fas fa-sign-in-alt"></i> Вхід</a></li>
-					
+				<!-- <li><a class="cd-signin" href="logIn.html" target="_blank"><i class="fas fa-sign-in-alt"></i> Вхід</a></li> -->
+				<li onclick="document.getElementById('modal-login').style.display='block'"><a><i class="fas fa-sign-in-alt"></i> Вхід</a></li>
 			</ul>
 		</nav>
 
 		<div class="slogan">
 			<div class="text">
-				<p>Вас вікає команда JustArt</p>
+				<p>Вас вікає команда Just Art</p>
 				<h1>Interior & Decor </br> Studio</h1>
 				<!-- <a href="#">Замовити проект</a> -->
 				<h2>Якісна 3D візуалізація</h2>
@@ -57,7 +106,7 @@
 			
 			<div class="indicator">
 				<ul>
-					<li class="active"></li>
+					<li></li>
 					<li></li>
 					<li></li>
 				</ul>
@@ -66,13 +115,13 @@
 			<div class="ftheader">
 				<div class="list">
 					<ul>
-						<li>Зв'яжітся з нами</li>
-						<li>ХМММММ </br> ХММ</li>
-						<li>Наша команда</li>
+						<li onclick="document.getElementById('modal-wrapper').style.display='block'"><a class="button1 bouncy">Зв'яжітся з нами</a></li>
+						<li><a class="button1 bouncy" style="animation-delay:0.07s">Послуги</a></li>
+						<li><a class="button1 bouncy" style="animation-delay:0.14s">Наша команда</a></li>
 					</ul>
 				</div>
 			</div>
-
+ 
 			<div class="control">
 				<div class="symbole">
 					<a href="#" class="prev"><i class="fa fa-angle-left"></i></a>
@@ -82,23 +131,21 @@
 
 
 		</div>
-
-
-
-
-
+		
+	</div>
+		
+	
 
 	</header>
 	
 
 
-
 	<section class="project-item">
-		<p>Комплексний дизайн інтер'єру</p>
-		<h2>Квартири, будинки та громадські приміщення</h2>
+		<p>Наші роботи</p>
+		<h4>Квартири, будинки та громадські приміщення</h4>
 	</section>
 
-	<section class="portfolio-section grid">
+	<section class="portfolio-section grid" >
 		<div class="portfolio-item grid" style="background-image: url(img/1.jpg);"><span>Проект #</span></div>
 		<div class="portfolio-item grid" style="background-image: url(img/2.jpg);"><span>Проект #</span></div>
 		<div class="portfolio-item grid" style="background-image: url(img/3.jpg);"><span>Проект #</span></div>
@@ -110,10 +157,12 @@
 		<div class="portfolio-item grid" style="background-image: url(img/9.jpg);"><span>Проект #</span></div>
 	</section>
 	<div class="portfolio-all grid">
-		<a href="project.html">Переглянути всі проекти</a>
+		<a href="project.html" class="button1 bouncy" style="animation-delay:0.07s">Переглянути більше</a></li>
+		
+		
 		
 	</div>
-	<section class="section-ready landing-section">
+	<section class="section-ready landing-section" id="particles-js">
 		<div class="section-ready__team">
 			<p>Про нас</p>
 		</div>
@@ -121,9 +170,9 @@
 			<div class="ready-left">
 				<h2>JUSTART Design створює розкішний і комфортний дизайн інтер'єру</h2>
 				<p>Ми створюємо інтер’єр зручний для життя. Ваша квартира не тільки буде
-					 виглядати як з журналу, вона буде наповнена гармонією. Наші інтер’єри 
+					 виглядати як з журналу, вона буде наповнена гармонією.</br> Наші інтер’єри 
 					 розкішні, унікальні, і комфортабельні! Вам не потрібно жертвувати нічим. 
-					 Не обмежуйте комфорт заради краси! Ви все отримаєте разом. 
+					 Не обмежуйте комфорт заради краси! </br>Ви все отримаєте разом. 
 					 Богемський шик – це комбінація зручності та функціональності. 
 					Проект втілюється в життя лише тоді, коли ви будете повністю задоволені.</p>
 				
@@ -141,73 +190,130 @@
 
 
 	<section class="landing-section section-blog">
+		<div class="section-blog__name">
+			<p>Як ми працюємо з дизайном</p>
+		</div>
 		<div class="container">
-			<h2>Технології проектування </h2>
-
 			<div class="blog-home grid">
-				<a href="#" class="blog-item grid">
+				<a class="blog-item grid">
 					<span class="blog-item-img" style="background-image: url(img/1.jpg);"></span>
 					<span class="blog-item-content grid">
-						<h4>Modi inventore saepe vitae cumque</h4>
-						<p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
-							Nulla amet quam perferendis impedit voluptates, natus saepe?
-							Modi inventore saepe vitae cumque </p>
+						<h4>Архітектура і дизайн інтер’єру</h4>
+						<p>Створення індивідуальних проектів різної складності. </br>Надаємо всю проектну документацію і креслення. 
+						</br>Проекти фасадів будинків і ланшафтний дизайн, планування та перепланування приміщень. </p>
 					</span>
 				</a>
-				<a href="#" class="blog-item grid">
+				<a class="blog-item grid">
 					<span class="blog-item-img" style="background-image: url(img/2.jpg);"></span>
 					<span class="blog-item-content grid">
-						<h4>Modi inventore saepe vitae cumque</h4>
-						<p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
-							Nulla amet quam perferendis impedit voluptates, natus saepe?
-							Modi inventore saepe vitae cumque </p>
+						<h4>Віртуалізація</h4>
+						<p>Детальні 3D проекти інтер'єрів на підставі зроблених і схвалених ескізів. 
+							</br>Кількість і якість візуалізаці обговорюється заздалегіть і індивідуально, адже за кожною 3D-картинкою стоїть серйозна і клопітка праця.</p>
 					</span>
 				</a>
-				<a href="#" class="blog-item grid">
+				<a class="blog-item grid">
 					<span class="blog-item-img" style="background-image: url(img/3.jpg);"></span>
 					<span class="blog-item-content grid">
-						<h4>Modi inventore saepe vitae cumque</h4>
-						<p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
-							Nulla amet quam perferendis impedit voluptates, natus saepe?
-							Modi inventore saepe vitae cumque </p>
+						<h4>Авторський нагляд</h4>
+						<p>Дизайнер контролює будівельників, перевіряє якість їх роботи 
+							і відповідності результату початковому проекту. 
+							Обумовлюєтся і оплачується авторський нагляд окремо, 
+							найчастіше на погодинній основі.</p>
 					</span>
 				</a>
-				<a href="#" class="blog-item grid">
+				<a class="blog-item grid">
 					<span class="blog-item-img" style="background-image: url(img/4.jpg);"></span>
 					<span class="blog-item-content grid">
-						<h4>Modi inventore saepe vitae cumque</h4>
-						<p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
-							Nulla amet quam perferendis impedit voluptates, natus saepe?
-							Modi inventore saepe vitae cumque </p>
+						<h4>Підбір меблів і комплектація</h4>
+						<p>Створення проекту внутрішнього оформлення квартири, 
+							котеджу або офісу. Пошук і замовлення оздоблювальних 
+							матеріалів, меблів, освітлювальних приладі, 
+							сентехніки та інших деталей інтер'єру, затверджених в дизайн-проекті. </p>
 					</span>
 				</a>
-				<a href="#" class="blog-item grid">
+				<a class="blog-item grid">
 					<span class="blog-item-img" style="background-image: url(img/5.jpg);"></span>
 					<span class="blog-item-content grid">
 						<h4>Modi inventore saepe vitae cumque</h4>
 						<p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
-							Nulla amet quam perferendis impedit voluptates, natus saepe?
+							</br>Nulla amet quam perferendis impedit voluptates, natus saepe?
 							Modi inventore saepe vitae cumque </p>
 					</span>
 				</a>
-				<a href="#" class="blog-item grid">
+				<a class="blog-item grid">
 					<span class="blog-item-img" style="background-image: url(img/6.jpg);"></span>
 					<span class="blog-item-content grid">
 						<h4>Modi inventore saepe vitae cumque</h4>
 						<p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
-							Nulla amet quam perferendis impedit voluptates, natus saepe?
+							</br>Nulla amet quam perferendis impedit voluptates, natus saepe?
 							Modi inventore saepe vitae cumque </p>
 					</span>
 				</a>
 			</div>
 		</div>
 	</section>
-	<section class="company-logo grid">
 	
-			<div class="company-logo__item grid"></div>
-			<div class="company-logo__item grid"></div>
-			<div class="company-logo__item grid"></div>
-			<div class="company-logo__item grid"></div>
+	<section class="company-logo">
+		<div class="company-logo__name">
+			<p>Нам довіряють</p>
+		</div>
+		<div class="company-logo__autoplay">
+			<div class="sl__slide">
+				<img src="images/sl1.jpg" alt="Картинка слайда" class="sl__img">
+			</div>
+			<div class="sl__slide">
+				<img src="images/sl2.jpg" alt="Картинка слайда" class="sl__img">
+				
+			</div>
+			<div class="sl__slide">
+				<img src="images/sl3.jpg" alt="Картинка слайда" class="sl__img">
+				
+			</div>
+			<div class="sl__slide">
+				<img src="images/sl4.jpg" alt="Картинка слайда" class="sl__img">
+				
+			</div>
+			<div class="sl__slide">
+				<img src="images/sl5.jpg" alt="Картинка слайда" class="sl__img">
+				
+			</div>
+			<div class="sl__slide">
+				<img src="images/sl6.jpg" alt="Картинка слайда" class="sl__img">
+				
+			</div>
+			<div class="sl__slide">
+				<img src="images/sl7.jpg" alt="Картинка слайда" class="sl__img">
+				
+			</div>
+			<div class="sl__slide">
+				<img src="images/sl8.jpg" alt="Картинка слайда" class="sl__img">
+				
+			</div>
+			<div class="sl__slide">
+				<img src="images/sl9.jpg" alt="Картинка слайда" class="sl__img">
+				
+			</div>
+			<div class="sl__slide">
+				<img src="images/sl10.jpg" alt="Картинка слайда" class="sl__img">
+				
+			</div>
+			<div class="sl__slide">
+				<img src="images/sl11.jpg" alt="Картинка слайда" class="sl__img">
+				
+			</div>
+			<div class="sl__slide">
+				<img src="images/sl12.jpg" alt="Картинка слайда" class="sl__img">
+				
+			</div>
+			<div class="sl__slide">
+				<img src="images/sl13.jpg" alt="Картинка слайда" class="sl__img">
+				
+			</div>
+			<div class="sl__slide">
+				<img src="images/sl14.jpg" alt="Картинка слайда" class="sl__img">
+				
+			</div>
+		</div>
 	
 	
 	</section>
@@ -219,10 +325,10 @@
 				<h2>Давайте домовимось про зустріч...</h2>
 				<p class="form-title">Замовте зворотній з'язок і ми Вам перетелефонуємо.</p>
 				<p class="form-message"></p>
-				<div><input type="text" name="name" class="form-input__name" placeholder="Name" required></div>
-				<div><input type="tel" name="phone" class="form-input__phone" placeholder="Phone"></div>
-				<div><input type="email" name="email" class="form-input__email" placeholder="Email"></div>
-				<div><input type="" name="message" class="form-input__message" placeholder="Message"></div>
+				<div><input type="text" name="name" class="form-input__name" placeholder="Ім'я" required></div>
+				<div><input type="tel" name="phone" class="form-input__phone" placeholder="Телефон" required></div>
+				<div><input type="email" name="email" class="form-input__email" placeholder="Email" required></div>
+				<div><textarea name="message" class="form-input__message" placeholder="Повідомлення" required cols="40" rows="5"></textarea></div>
 				<div>
 					<input type="submit" class="form-input__button" value="Надіслати">
 				</div>
@@ -235,9 +341,9 @@
 
 	</section>
 
-	<footer class="footer-container">
+	<footer class="footer-container grid">
 		<div class="footer-container__logo">
-			<img src="img/articon.png" style="width: 150px" height="150px" />
+			<img src="img/articon-white1.png" style="width: 130px" height="60px" />
 			<p>JUST ART Design</p>
 		</div>
 		<div class="footer-container__contacts">
@@ -252,12 +358,13 @@
 		<div class="footer-container__social">
 			<h2>Ми тут!</h2>
 			<ul class="footer-container__social_links">
-				<li><a href="https://www.facebook.com/justartdesignstudio/" target="_blank">
-						<p><i class="fab fa-facebook fa-3x"></i></p>
-					</a></li>
+				<li>
+					<a href="https://www.facebook.com/justartdesignstudio/" target="_blank">
+					<i class="fa fa-facebook"></i> Facebook</a>
+				</li>
 				<li><a href="https://www.instagram.com/justart_design/" target="_blank">
-						<p><i class="fab fa-instagram fa-3x"></i></p>
-					</a></li>
+					<i class="fa fa-instagram"></i> Instagrame</a>
+				</li>
 
 
 			</ul>
@@ -265,21 +372,24 @@
 	</footer>
 	<link rel="stylesheet" href="sass/main.css">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+	<script src="js/mixitup.min.js"></script>
 	<script src="js/main.js"></script>
 	<script src="js/scripts.min.js"></script>
 	<script src="./libs/jquery/dist/jquery.min.js"></script>
 	
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
 	
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.18.2/TweenMax.min.js"></script>
-	<script src="js/company.js"></script>
+	
 	
 	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAu6Sbnh9MeNLalgDn5mJmN7cJ7aOsXA9s&callback=initMap" async defer></script>
 	<script src="./js/google-map.js"></script>
-	<script src="js/mixitup.min.js"></script>
+
+	
 	<script src="./telegramform/js/telegramform.js"></script>
 	
-
+	<script type="text/javascript" src="libs/slick/slick.min.js"></script>
+	<script src="js/company.js"></script>
+	<script src="js/main.js"></script>
 </body>
 
 </html>

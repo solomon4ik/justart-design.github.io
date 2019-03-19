@@ -2,7 +2,7 @@ $( document ).ready(function() {
     $(".portfolio-section").empty();
     let projectArray =JSON.parse( localStorage.getItem("project"));
     for(var i =0; i<projectArray.length;i++){
-        $(".portfolio-section").append("<div class=\"mix "+projectArray[i].checker+" portfolio-item grid\" style=\"background-image: url(img/8.jpg);\">\n" +
+        $(".portfolio-section").append("<div class=\"mix "+projectArray[i].checker+" portfolio-item grid\" data-my-order=\"1\" style=\"background-image: url(img/8.jpg);\">\n" +
 
             "  <span> "+projectArray[i].name+" </span>\n" +
             " <br>\n" +
@@ -13,4 +13,11 @@ $( document ).ready(function() {
         
         
     }
+    var containerEl = document.querySelector('.portfolio-section');
+var mixer = mixitup(containerEl);
 });
+
+
+
+
+

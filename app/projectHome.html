@@ -11,8 +11,9 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
 	<link rel="shortcut icon" href="img/articon.png" type="image/x-icon">
-
-	<link href="https://fonts.googleapis.com/css?family=Titillium+Web:300,400,600,700" rel="stylesheet">
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+	<link rel="stylesheet" href="sass/main.css">
+	<link href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,500,500i,700,700i,900|ZCOOL+XiaoWei" rel="stylesheet">
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 
 </head>
@@ -28,10 +29,10 @@
 
 			<ul class="menu">
 				<li><a href="index.html">Головна</a></li>
-				<li><a href="#">Проекти</a></li>
+				<li><a href="project.html">Проекти</a></li>
 				<li><a href="#">Послуги</a></li>
-				<li><a href="#">Team</a></li>
-				<li><a href="#">Контакти</a></li>
+				<li><a href="o-studii.html">Про нас</a></li>
+				<li><a href="contact.html">Контакти</a></li>
 			</ul>
 
 			<ul class="social">
@@ -60,7 +61,7 @@
 		<button class="filter" type="button" data-filter=".category-a">0-40м<sup>2</sup></button>
 		<button class="filter" type="button" data-filter=".category-b">40-60м<sup>2</button>
 		<button class="filter" type="button" data-filter=".category-c">60-90м<sup>2</button>
-			<button class="filter" type="button" data-filter=".category-d">90-120м<sup>2</button>
+		<button class="filter" type="button" data-filter=".category-d">90-120м<sup>2</button>
 	</div>
 	<section class="portfolio-section grid">
 		
@@ -87,37 +88,29 @@
 		<div class="footer-container__social">
 			<h2>Ми тут!</h2>
 			<ul class="footer-container__social_links">
-				<li><a href="https://www.facebook.com/justartdesignstudio/" target="_blank">
-						<p><i class="fab fa-facebook fa-3x"></i></p>
-					</a></li>
+				<li>
+					<a href="https://www.facebook.com/justartdesignstudio/" target="_blank">
+					<i class="fa fa-facebook"></i> Facebook</a>
+				</li>
 				<li><a href="https://www.instagram.com/justart_design/" target="_blank">
-						<p><i class="fab fa-instagram fa-3x"></i></p>
-					</a></li>
-
-
+					<i class="fa fa-instagram"></i> Instagrame</a>
+				</li>
+	
+	
 			</ul>
 		</div>
 	</footer>
-	<link rel="stylesheet" href="sass/main.css">
-	
-	
-	<script src="js/scripts.min.js"></script>
-	<script src="./libs/jquery/dist/jquery.min.js"></script>
-	
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
-	
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.18.2/TweenMax.min.js"></script>
 	
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
-	
-	
+	<script src="js/scripts.min.js"></script>
+	<script src="./libs/jquery/dist/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
 	<script src="js/mixitup.min.js"></script>
-	
     <script src="js/homepage.js"></script>
 	
 	<script>
-		var config = document.querySelector('.portfolio-section');
-		var mixer = mixitup(config);
+		var containerEl = document.querySelector('.portfolio-section');
+		var mixer = mixitup(containerEl);
 
 		
 

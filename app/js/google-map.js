@@ -1,7 +1,11 @@
-function initMap() {
+    var marker;
+    function initMap() {
     // Styles a map in night mode.
-    var map = new google.maps.Map(document.getElementById('map'), {
-        center: { lat: 49.553628, lng: 25.595772 },
+    var map;
+    var myLatLng = {lat: 49.553600, lng: 25.595775};
+
+    map = new google.maps.Map(document.getElementById('map'), {
+        center: myLatLng,
         zoom: 18,
         styles: [
             { elementType: 'geometry', stylers: [{ color: '#242f3e' }] },
@@ -84,4 +88,53 @@ function initMap() {
             }
         ]
     });
+    var contentString = '<div id="content">'+
+            '<div id="siteNotice">'+
+            '</div>'+
+            '<h1 id="firstHeading" class="firstHeading">Дизайн-студія Just Art</h1>'+
+            '<div id="bodyContent">'+
+            '<p>1a, вулиця Чорновола' +
+            '<br>'+
+            'Тернопіль '+
+            '<br>'+
+            'Тернопільська область,  '+
+            '<br>'+
+            'Україна '+
+            '<br>'+
+            '46002'+
+            '<br>'+
+            '<p><a href="https://www.google.com/maps/place/%D0%94%D0%B8%D0%B7%D0%B0%D0%B9%D0%BD-%D1%81%D1%82%D1%83%D0%B4%D1%96%D1%8F+Just+Art/@49.5533699,25.5955445,18.25z/data=!4m5!3m4!1s0x0:0xe6b9ff92d4262e32!8m2!3d49.553567!4d25.5957768?hl=uk" target="_blank">'+
+            'Переглянути на Картах Google</a> '+
+            '</div>'+
+            '</div>';
+
+    var infowindow = new google.maps.InfoWindow({
+        content: contentString
+    });
+
+    var marker = new google.maps.Marker({
+        position: myLatLng,
+        map: map,
+        title: 'Дизайн-студія Just Art'
+    });
+    marker.addListener('click', function() {
+        infowindow.open(map, marker);
+    });
+   
+    // marker = new google.maps.Marker({
+    //     map: map,
+    //     draggable: true,
+        
+    //     animation: google.maps.Animation.DROP,
+    //     position: {lat: 49.553600, lng: 25.595775}
+    //     });
+    //     marker.addListener('click', toggleBounce);
+    // }
+
+    // function toggleBounce() {
+    //     if (marker.getAnimation() !== null) {
+    //         marker.setAnimation(null);
+    //     } else {
+    //         marker.setAnimation(google.maps.Animation.BOUNCE);
+    //     }
 }
