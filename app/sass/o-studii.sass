@@ -109,15 +109,15 @@ ul
                         background-color: #fff
 
 .entry-title
-        height: 230px
+        height: 180px
         width: 100%
         background-size: cover
         background-position: center 
-        padding: 30px 30px 0 30px
+        padding: 10px 
        
         display: grid
         p
-            font-size: 3.4rem
+            font-size: 3rem
             letter-spacing: 3px
             text-align: center
             align-items: center
@@ -169,33 +169,37 @@ ul
     form
         grid-gap: 20px
         grid-template-columns: repeat(1, 1fr)
-
-    .form-input__button
-        font-size: 17px
-        padding: 11px
-        width: 150px
-        &:hover
-           background-color: orange
+        input, textarea
+            border: none
+            padding: 15px 20px
+            width: 100%
+            resize: none
+            font-family: 'Roboto', sans-serif
+            font-style: italic
+            outline: none
+            transition: background-color .25s ease
+            background-color: lighten($dark, 55%)
+            &:focus
+                background-color: #ffffff
+            &::placeholder
+                color: lighten($dark, 20%)
+        .form-input__button
+            background-color: #4caf50
+            color: white
+            padding: 14px 20px
+            text-transform: uppercase
+            border: none
+            cursor: pointer
+            width: 100%
+            font-size: 20px
+            &:hover
+                    
+                opacity: 0.8
     .form-item
+        &:nth-child(1)
+            grid-column: 1 / 2
         &:nth-child(2)
             grid-column: 2 / 4
-    &__right
-        padding: 0 0 0 20px
-
-input, textarea
-    border: none
-    padding: 15px 20px
-    width: 100%
-    font-family: Arial, sans-serif
-    font-style: italic
-    outline: none
-    transition: background-color .25s ease
-    &:focus
-        background-color: #ffffff
-    &::placeholder
-        color: lighten($dark, 20%)
-
-
 
 // FOOTER SECTION//
     
@@ -263,16 +267,71 @@ input, textarea
     table
         margin-bottom: 50px
       
+//duzayn-interegy
+
+.table-price
+    margin: 10px auto
+    border: 1px double black
+    border-collapse: collapse
+    background: rgba(196, 196, 196,.25)
+    tr, td
+        text-align: center
+        padding: 5px
+        border: 1px solid black
+.advantages
+    grid-template-columns: repeat(2, 1fr)
+    .advantages-content
+        height: 40vh
+        margin: 20px
+        h4 
+            text-align: center
 
 
+///team
+.section-ready
+    box-shadow: 0 2px 45px -11px rgba(0, 0, 0, .8)
+    background-color: $light
+    &__team
+        margin: 10px
+        border-right: 1px solid #dadada
+        p
+            margin-right: 5%
+            text-align: right
+            font-size: 2.4rem
+            letter-spacing: 3px
+            border-bottom: 1px solid #000   
+    .container
+        grid-template-columns: 1fr 1fr
+        .ready-left
+            border-right: 1px solid #dadada
+            font-size: 18px
+            padding: 60px 60px 60px 0px
+            min-width: 400px
+            h2
+                margin-top: 0
+                margin-bottom: 40px
+        .ready-right
+            img
+                width: 100%
+    .ready-left-bottom
+        
+        grid-template-columns: repeat(4, 1fr)
+        grid-gap: 10px
+        margin-top: 20px
+        &__team
+            
+            padding: 5px
+            padding: $gutter
+            img
+                width: 100%
 
 
+.landing-section
+    padding: 40px 0px
+    h2
+        font-size: 34px
+        font-weight: 800
+        color: $dark
+        line-height: 1.2
 
-
-
-
-
-   
-
-
-@import "media" // Прописуються завжди в кінці
+// @import "media" // Прописуються завжди в кінці

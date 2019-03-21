@@ -13,9 +13,10 @@ $( document ).ready(function() {
         
         
     }
-    var containerEl = document.querySelector('.portfolio-section');
-var mixer = mixitup(containerEl);
+
+    
 });
+
 
 
 

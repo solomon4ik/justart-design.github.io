@@ -6,7 +6,7 @@ $(document).ready(function () {
         var formTitle = $(formNm).find(".form-title");
         $.ajax({
             type: "POST",
-            url: './telegramform/php/send-message-to-telegram.php',
+            url: 'telegramform/php/send-message-to-telegram.php',
             data: formNm.serialize(),
             success: function (data) {
               // Вивід повідомлення про успішну відправку
@@ -15,7 +15,7 @@ $(document).ready(function () {
               setTimeout(function(){
                 formTitle.css("display","block");
                 message.html('');
-                $('input').not(':input[type=submit], :input[type=hidden]').val('');
+                $('input, textarea').not(':input[type=submit], :input[type=hidden]').val('');
               }, 3000);
             },
             error: function (jqXHR, text, error) {
@@ -25,7 +25,7 @@ $(document).ready(function () {
                 setTimeout(function(){
                   formTitle.css("display","block");
                   message.html('');
-                  $('input').not(':input[type=submit], :input[type=hidden]').val('');
+                  $('input, textarea').not(':input[type=submit], :input[type=hidden]').val('');
                 }, 3000);
             }
         });

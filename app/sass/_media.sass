@@ -14,30 +14,570 @@
 
 /* Large Devices, Wide Screens */
 @media only screen and (max-width : 1200px)
-	/**/
-
+	.wrapper
+		nav
+			grid-template-columns: 1fr 2fr 171px
+			.logo
+				letter-spacing: 1px
+			ul.menu
+				li
+					a
+						padding: 6px 15px
+			ul.social
+				li 
+					margin: 8px 0px 0px 0px 
+		.slogan
+			.ftheader
+            	grid-column: 1 / -2
+            	display: grid
+            	grid-template-columns: 2fr 1fr
 	
+	.portfolio-all
+			height: 70px
+			.bouncy
+				width: 260px
+				
+				height: 55%
+				margin: 20px auto
+				padding: 0px
+				
+				a
+					font-size: 18px
+	.form-section
+		padding: 20px
+		grid-gap: 15px
+		&__left
+			min-width: auto
+			padding: 20px
+			form
+				grid-gap: 10px
+				h2
+					font-size: 20px
+				p
+					font-size: 16px
+		&__right
+			padding: 10px
 
 /* Medium Devices, Desktops */
 @media only screen and (max-width : 992px)
-	/**/
-
+	
+	
+	.wrapper
 		
+		nav
+			grid-template-columns: 1fr 2fr 171px
+			.logo
+				letter-spacing: 1px
+			ul.menu
+				li
+					a
+						padding: 6px 15px
+			ul.social
+				li 
+					margin: 8px 0px 0px 0px 
+		.slogan
+			grid-column: 1 / -1
+			grid-template-columns: 2fr 1fr
+			.ftheader
+				
+            	display: grid
+            	grid-template-columns: 1fr
+				
+
+
+
+	
+	.project-item 
+		padding: 20px 20px 0px 20px
+		height: 100px
+		p
+        	font-size: 1.7rem
+        	letter-spacing: 2px
+		h4
+			font-size: 0.9rem
+
+
+	.portfolio-section
+		grid-template-columns: repeat(3, 1fr)
+	.portfolio-item
+		min-height: 40vh
+		font-size: 16px
+		&:nth-child(1)
+        	grid-column: 1 / 3
+		&:nth-child(3)
+			grid-column: 1 / 2
+
+		&:nth-child(5)
+			grid-column: 3
+			grid-row: 2 / 4
+		&:nth-child(6)
+			grid-column: 1 / 3
+			grid-row: 3
+		&:nth-child(7)
+			grid-column: 1 / 2
+			
+	.portfolio-all
+		height: 70px
+		.bouncy
+			width: 220px
+			
+			height: 55%
+			margin: 20px auto
+			padding: 0px
+        	
+			a
+				font-size: 16px
+	.section-ready
+		&__team
+			p
+				font-size: 1.7rem
+        		letter-spacing: 2px 
+		.container
+			padding-top: 10px
+			.ready-left
+				padding: 25px 25px 25px 0px
+				p
+					font-size: 14px
+			.ready-right
+				padding-left: 25px
+				&__team
+					padding: 5px
+	.landing-section
+		padding: 15px 0px
+
+		h2
+			font-size: 23px
+
+	.section-blog
+		&__name
+			p
+				font-size: 1.7rem
+        		letter-spacing: 2px 
+	.container
+		
+		.blog-home
+			grid-gap: 10px
+			.blog-item
+				grid-template-rows: 280px 1fr
+				&-img
+					
+					
+				&-content
+					padding: 0px 2px
+					h4
+						margin-top: 7px
+					p
+						font-size: 14px
+						padding: 5px
+	.company-logo
+		height: 200px
+		&__name
+			p
+				font-size: 1.7rem
+        		letter-spacing: 2px 	
+		&__autoplay
+        	margin: 0 25px 
+        	img
+            	height: 120px
+	.form-section
+		padding: 20px
+		grid-gap: 10px
+		&__left
+			min-width: auto
+			padding: 10px
+			form
+				grid-gap: 10px
+				h2
+					font-size: 17px
+				p
+					font-size: 14px
+		&__right
+			padding: 0px
+	.footer-container
+		*>h2
+			font-size: 20px
+		*>p,a 
+			font-size: 12px
+		padding: 10px
+		&__logo
+			img
+				height: 50px
+				width: 80px
+			
+
 
 /* Small Devices, Tablets */
 @media only screen and (max-width : 768px)
-	/**/
+	
+
+	.project-item 
+		height: 80px
+		padding: 15px 15px 0px 15px
+		p
+        	font-size: 1.3rem
+        	letter-spacing: 2px
+		h4
+			font-size: 0.7rem
+	.portfolio-section
+		grid-template-columns: repeat(2, 1fr)
+	.container-filter
+		height: 90px
+	.portfolio-item
+		min-height: 40vh
+		font-size: 16px
+		&:nth-child(1)
+        	grid-column: 1 / 3
+		&:nth-child(2)
+			grid-column: 1 / 2
+
+		&:nth-child(3)
+			grid-column: 2 / 3
+			
+		&:nth-child(4)
+			grid-column: 1 / 2
+			
+		&:nth-child(5)
+			grid-column: 2 / 3
+			grid-row: 3 / 5 
+		&:nth-child(6)
+			grid-column: initial
+			grid-row: 4
+		&:nth-child(9)
+			grid-column: 1 / 3 
+			grid-row: 6
+	.portfolio-all
+		height: 70px
+		.bouncy
+			width: 180px
+			margin: 13px auto
+			padding: 0px
+        	
+			a
+				font-size: 14px
+	
+	.section-ready
+		&__team
+			p
+				font-size: 1.3rem
+        		letter-spacing: 2px 
+		.container
+			padding-top: 10px
+			.ready-left
+				min-width: auto
+				padding: 15px 15px 15px 0px
+				p
+					font-size: 12px
+			.ready-right
+				padding-left: 15px
+				&__team
+					padding: 5px
+	.landing-section
+		padding: 15px 0px
+
+		h2
+			font-size: 16px
+
+	.section-blog
+		&__name
+			p
+				font-size: 1.3rem
+        		letter-spacing: 2px 
+	.container
+		
+		.blog-home
+			grid-template-columns: repeat(2, 1fr)
+			grid-gap: 5px
+			.blog-item
+				grid-template-rows: 280px 1fr
+				&:nth-child(3)
+					grid-column: 1 / 2
+				&:nth-child(4)
+					grid-column: 2 / 3
+				&-img
+					
+					
+				&-content
+					padding: 0px 2px
+					h4	
+						font-size: 16px
+						margin-top: 7px
+					p
+						font-size: 12px
+						padding: 5px
+	.company-logo
+		height: 150px
+		&__name
+			p
+				font-size: 1.3rem
+        		letter-spacing: 2px 	
+		&__autoplay
+        	margin: 0 28px 
+        	img
+            	height: 90px
+	.form-section
+		
+		grid-template-columns: 1fr
+		grid-template-rows: 2fr
+
+		padding: 10px
+		grid-gap: 0px
+		
+		.form-item
+
+			min-height: 60vh
+			&:nth-child(1)
+				grid-column: 1 / 2
+				grid-row: 1 / 2
+			&:nth-child(2)
+				grid-column: 1 / 2
+				grid-row: 2 / 3 
+			
+		&__left
+			
+			border-right: 0
+			padding: 5px
+			
+		form
+			grid-template: 1fr
+			grid-gap: 10px
+			h2
+				font-size: 15px
+			p
+				font-size: 12px
+		.form-input__button
+        	background-color: #4caf50
+        	color: white
+        	padding: 14px 20px
+        	text-transform: uppercase
+        	border: none
+        	cursor: pointer
+        	width: 100%
+        	font-size: 12px
+		&__right
+			padding: 5px
+		input, textarea
+        	border: none
+        	padding: 5px 10px
+        	width: 100%
+        	resize: none
+        	font-family: 'Roboto', sans-serif
+        	font-style: italic
+        	outline: none
+        	transition: background-color .25s ease
+        	&:focus
+            	background-color: #ffffff
+        	&::placeholder
+            	color: lighten($dark, 20%)
+	.footer-container
+		*>h2
+			font-size: 12px
+		*>p,a 
+			font-size: 10px
+		padding: 10px
+		&__logo
+			img
+				padding: 10px 35px
+				height: 50px
+				width: 80px
+			p
+				text-align: center
 
 
-/* Extra Small Devices, Phones */
+
 @media only screen and (max-width : 480px)
-	/**/
+	.project-item
+		p
+        	font-size: 0.85rem
+        	letter-spacing: 1px
+		h4
+			font-size: 0.55rem
+	.container-filter
+		height: 90px
+	.portfolio-section
+		grid-template-columns: 1fr
+	.portfolio-item
+		min-height: 45vh
+		&:nth-child(1)
+			grid-column: 1 / 2
+		&:nth-child(3)
+			grid-column: 1 / 2
+		&:nth-child(5)
+			grid-column: 1 / 2
+			grid-row: initial
+		&:nth-child(6)
+			grid-column: 1 / 2
+			grid-row: initial
+		&:nth-child(8)
+			grid-column: 1 / 2
+		&:nth-child(9)
+			grid-column: 1 / 2
+			grid-row: initial
+	.portfolio-all
+		height: 70px
+		.bouncy
+			margin: 13px auto
+			padding: 0px
+        	
+			a
+				font-size: 14px
+	.section-ready
+		&__team
+			p
+				font-size: 0.85rem
+        		letter-spacing: 1px 
+				
+		.container
+			grid-template-columns: 1fr
+			grid-template-rows: 2fr
+			min-height: 100%
+			&:nth-child(1)
+				grid-column: 1 / 2
+				grid-row: 1 / 2
+			&:nth-child(2)
+				grid-column: 1 / 2
+				grid-row: 2 / 3 
+			.ready-left
+				border-right: 0
+				h2
+					font-size: 10px
+					margin-bottom: 20px
+				p 
+					font-size: 8px
+			.ready-right
+				grid-template-columns: repeat(4, 1fr)
 
+	.section-blog
+		&__name
+			p
+				font-size: 0.85rem
+        		letter-spacing: 1px 
+	.container
+		
+		.blog-home
+			grid-template-columns: repeat(2, 1fr)
+			grid-gap: 5px
+			.blog-item
+				span
+					h4
+						font-size: 12px
+					p
+						margin-top: 5px
+						padding: 10px 10px
+				&:nth-child(1)
+					grid-column: 1 / -1
+				&:nth-child(2)
+					grid-column: 1 / -1
+				&:nth-child(3)
+					grid-column: 1 / -1
+				&:nth-child(4)
+					grid-column: 1 / -1
+				&:nth-child(5)
+					grid-column: 1 / -1
+				&:nth-child(6)
+					grid-column: 1 / -1
+				
+				&-img
+					
+					
+				&-content
+					padding: 0px 2px
+					h4	
+						font-size: 16px
+						margin-top: 7px
+					p
+						font-size: 10px
+						padding: 5px
+	.form-section
+		
+		grid-template-columns: 1fr
+		grid-template-rows: 2fr
 
+		padding: 10px
+		grid-gap: 0px
+		
+		.form-item
+
+			min-height: 40vh
+			&:nth-child(1)
+				grid-column: 1 / 2
+				grid-row: 1 / 2
+			&:nth-child(2)
+				grid-column: 1 / 2
+				grid-row: 2 / 3 
+			
+		&__left
+			
+			border-right: 0
+			padding: 5px
+			
+		form
+			grid-template: 1fr
+			grid-gap: 10px
+			h2
+				font-size: 15px
+			p
+				font-size: 12px
+		.form-input__button
+        	background-color: #4caf50
+        	color: white
+        	padding: 14px 20px
+        	text-transform: uppercase
+        	border: none
+        	cursor: pointer
+        	width: 100%
+        	font-size: 12px
+		&__right
+			padding: 5px
+		input, textarea
+        	border: none
+        	padding: 5px 10px
+        	width: 100%
+        	resize: none
+        	font-family: 'Roboto', sans-serif
+        	font-style: italic
+        	outline: none
+        	transition: background-color .25s ease
+        	&:focus
+            	background-color: #ffffff
+        	&::placeholder
+            	color: lighten($dark, 20%)
 /* Custom, iPhone Retina */
 @media only screen and (max-width : 320px)
-	body
-		background-color: red		/**/
+	.project-item
+		p
+        	font-size: 0.6rem
+        	letter-spacing: 1px
+		h4
+			font-size: 0.2rem
+	.portfolio-item
+		min-height: 32vh
+	.landing-section
+		padding: 10px 0px
+		h2
+			font-size: 34px
+			font-weight: 800
+			color: $dark
+			line-height: 1.2
+	.section-ready
+		.container
+			grid-template-columns: 1fr
+			grid-template-rows: 2fr
+			min-height: 100%
+			&:nth-child(1)
+				grid-column: 1 / 2
+				grid-row: 1 / 2
+			&:nth-child(2)
+				grid-column: 1 / 2
+				grid-row: 2 / 3 
+			.ready-left
+				h2
+					font-size: 12px
+					margin-bottom: 20px
+				p 
+					font-size: 8px
+			.ready-right
+				grid-template-columns: repeat(4, 1fr)
+
 
 /*==========  Mobile First  ==========*/
 
@@ -53,10 +593,176 @@
 
 /* Small Devices, Tablets */
 @media only screen and (min-width : 768px)
-	/**/
+	// .project-item 
+	// 	height: 80px
+	// 	padding: 15px 15px 0px 15px
+	// 	p
+    //     	font-size: 1.3rem
+    //     	letter-spacing: 2px
+	// 	h4
+	// 		font-size: 0.7rem
+	// .portfolio-section
+	// 	grid-template-columns: repeat(2, 1fr)
+	// .portfolio-item
+	// 	min-height: 40vh
+	// 	font-size: 16px
+	// 	&:nth-child(1)
+    //     	grid-column: 1 / 3
+	// 	&:nth-child(2)
+	// 		grid-column: 1 / 2
 
+	// 	&:nth-child(3)
+	// 		grid-column: 2 / 3
+			
+	// 	&:nth-child(4)
+	// 		grid-column: 1 / 2
+			
+	// 	&:nth-child(5)
+	// 		grid-column: 2 / 3
+	// 		grid-row: 3 / 5 
+	// 	&:nth-child(6)
+	// 		grid-column: initial
+	// 		grid-row: 4
+	// 	&:nth-child(9)
+	// 		grid-column: 1 / 3 
+	// 		grid-row: 6
+	// .portfolio-all
+	// 	height: 70px
+	// 	.bouncy
+	// 		width: 180px
+	// 		margin: 13px auto
+	// 		padding: 0px
+        	
+	// 		a
+	// 			font-size: 14px
+	
+	// .section-ready
+	// 	&__team
+	// 		p
+	// 			font-size: 1.3rem
+    //     		letter-spacing: 2px 
+	// 	.container
+	// 		padding-top: 10px
+	// 		.ready-left
+	// 			min-width: auto
+	// 			padding: 15px 15px 15px 0px
+	// 			p
+	// 				font-size: 12px
+	// 		.ready-right
+	// 			padding-left: 15px
+	// 			&__team
+	// 				padding: 5px
+	// .landing-section
+	// 	padding: 15px 0px
 
-/* Medium Devices, Desktops */
+	// 	h2
+	// 		font-size: 16px
+
+	// .section-blog
+	// 	&__name
+	// 		p
+	// 			font-size: 1.3rem
+    //     		letter-spacing: 2px 
+	// .container
+		
+	// 	.blog-home
+	// 		grid-template-columns: repeat(2, 1fr)
+	// 		grid-gap: 5px
+	// 		.blog-item
+	// 			grid-template-rows: 280px 1fr
+	// 			&:nth-child(3)
+	// 				grid-column: 1 / 2
+	// 			&:nth-child(4)
+	// 				grid-column: 2 / 3
+	// 			&-img
+					
+					
+	// 			&-content
+	// 				padding: 0px 2px
+	// 				h4	
+	// 					font-size: 16px
+	// 					margin-top: 7px
+	// 				p
+	// 					font-size: 12px
+	// 					padding: 5px
+	// .company-logo
+	// 	height: 150px
+	// 	&__name
+	// 		p
+	// 			font-size: 1.3rem
+    //     		letter-spacing: 2px 	
+	// 	&__autoplay
+    //     	margin: 0 28px 
+    //     	img
+    //         	height: 90px
+	// .form-section
+		
+	// 	grid-template-columns: 1fr
+	// 	grid-template-rows: 2fr
+
+	// 	padding: 10px
+	// 	grid-gap: 0px
+		
+	// 	.form-item
+
+	// 		min-height: 60vh
+	// 		&:nth-child(1)
+	// 			grid-column: 1 / 2
+	// 			grid-row: 1 / 2
+	// 		&:nth-child(2)
+	// 			grid-column: 1 / 2
+	// 			grid-row: 2 / 3 
+			
+	// 	&__left
+			
+	// 		border-right: 0
+	// 		padding: 5px
+			
+	// 	form
+	// 		grid-template: 1fr
+	// 		grid-gap: 10px
+	// 		h2
+	// 			font-size: 15px
+	// 		p
+	// 			font-size: 12px
+	// 	.form-input__button
+    //     	background-color: #4caf50
+    //     	color: white
+    //     	padding: 14px 20px
+    //     	text-transform: uppercase
+    //     	border: none
+    //     	cursor: pointer
+    //     	width: 100%
+    //     	font-size: 12px
+	// 	&__right
+	// 		padding: 5px
+	// 	input, textarea
+    //     	border: none
+    //     	padding: 5px 10px
+    //     	width: 100%
+    //     	resize: none
+    //     	font-family: 'Roboto', sans-serif
+    //     	font-style: italic
+    //     	outline: none
+    //     	transition: background-color .25s ease
+    //     	&:focus
+    //         	background-color: #ffffff
+    //     	&::placeholder
+    //         	color: lighten($dark, 20%)
+	// .footer-container
+	// 	*>h2
+	// 		font-size: 12px
+	// 	*>p,a 
+	// 		font-size: 10px
+	// 	padding: 10px
+	// 	&__logo
+	// 		img
+	// 			padding: 10px 35px
+	// 			height: 50px
+	// 			width: 80px
+	// 		p
+	// 			text-align: center
+
 @media only screen and (min-width : 992px)
 	/**/
 

@@ -22,7 +22,7 @@
 </head>
 
 <body>
-	<div id="modal-wrapper" class="modal">
+	<!-- <div id="modal-wrapper" class="modal">
 
 		<form class="modal-content animate animate-down" action="telegramform/php/send-message-to-telegram.php" method="POST" id="form-contact">
 
@@ -45,7 +45,7 @@
 
 		</form>
 
-	</div>
+	</div> -->
 	<div id="modal-login" class="modal">
 	
 		<div class="modal-content animate animate-down" >
@@ -78,7 +78,7 @@
 			<ul class="menu">
 				<li><a href="index.html">Головна</a></li>
 				<li><a href="project.html">Проекти</a></li>
-				<li><a href="#">Послуги</a></li>
+				<li><a href="duzayn-interegy.html">Послуги</a></li>
 				<li><a href="o-studii.html" target="_blank">Про нас</a></li>
 				<li><a href="contact.html">Контакти</a></li>
 			</ul>
@@ -86,16 +86,16 @@
 			<ul class="social">
 				<li><a href="https://www.facebook.com/justartdesignstudio/" target="_blank"><i class="fa fa-facebook"></i></a></li>
 				<li><a href="https://www.instagram.com/justart_design/" target="_blank"><i class="fa fa-instagram"></i></a></li>
-				<!-- <li><a class="cd-signin" href="logIn.html" target="_blank"><i class="fas fa-sign-in-alt"></i> Вхід</a></li> -->
+				<!-- <li><a class="cd-signin" href="logIn.html" target="_blank"><i class="fas fa-sign-in-alt"></i> Вхід</a></li>  -->
 				<li onclick="document.getElementById('modal-login').style.display='block'"><a><i class="fas fa-sign-in-alt"></i> Вхід</a></li>
 			</ul>
 		</nav>
 
 		<div class="slogan">
 			<div class="text">
-				<p>Вас вікає команда Just Art</p>
-				<h1>Interior & Decor </br> Studio</h1>
-				<!-- <a href="#">Замовити проект</a> -->
+				<p>Welcome</p>
+				<h1>Interior & Decor Studio</h1>
+				<!-- <a href="#">Замовити проект</a>  -->
 				<h2>Якісна 3D візуалізація</h2>
 
 			</div>
@@ -104,20 +104,20 @@
 				<h2>0<span class="newCount"></span>/03</h2>
 			</div>
 			
-			<div class="indicator">
+			<!-- <div class="indicator">
 				<ul>
 					<li></li>
 					<li></li>
 					<li></li>
 				</ul>
-			</div>
+			</div> -->
 
 			<div class="ftheader">
 				<div class="list">
 					<ul>
 						<li onclick="document.getElementById('modal-wrapper').style.display='block'"><a class="button1 bouncy">Зв'яжітся з нами</a></li>
-						<li><a class="button1 bouncy" style="animation-delay:0.07s">Послуги</a></li>
-						<li><a class="button1 bouncy" style="animation-delay:0.14s">Наша команда</a></li>
+						<li><a href="duzayn-interegy.html" target="_blank" class="button1 bouncy" style="animation-delay:0.07s">Послуги</a></li>
+						<li><a href="team.html" target="_blank" class="button1 bouncy" style="animation-delay:0.14s">Наша команда</a></li>
 					</ul>
 				</div>
 			</div>
@@ -146,23 +146,24 @@
 	</section>
 
 	<section class="portfolio-section grid" >
-		<div class="portfolio-item grid" style="background-image: url(img/1.jpg);"><span>Проект #</span></div>
-		<div class="portfolio-item grid" style="background-image: url(img/2.jpg);"><span>Проект #</span></div>
-		<div class="portfolio-item grid" style="background-image: url(img/3.jpg);"><span>Проект #</span></div>
-		<div class="portfolio-item grid" style="background-image: url(img/4.jpg);"><span>Проект #</span></div>
-		<div class="portfolio-item grid" style="background-image: url(img/5.jpg);"><span>Проект #</span></div>
-		<div class="portfolio-item grid" style="background-image: url(img/6.jpg);"><span>Проект #</span></div>
-		<div class="portfolio-item grid" style="background-image: url(img/7.jpg);"><span>Проект #</span></div>
-		<div class="portfolio-item grid" style="background-image: url(img/8.jpg);"><span>Проект #</span></div>
-		<div class="portfolio-item grid" style="background-image: url(img/9.jpg);"><span>Проект #</span></div>
+		<div class="portfolio-item grid" style="background-image: url(img/1.jpg);"><span>Проект 1</span></div>
+		<div class="portfolio-item grid" style="background-image: url(img/2.jpg);"><span>Проект 2</span></div>
+		<div class="portfolio-item grid" style="background-image: url(img/3.jpg);"><span>Проект 3</span></div>
+		<div class="portfolio-item grid" style="background-image: url(img/4.jpg);"><span>Проект 4</span></div>
+		<div class="portfolio-item grid" style="background-image: url(img/5.jpg);"><span>Проект 5</span></div>
+		<div class="portfolio-item grid" style="background-image: url(img/6.jpg);"><span>Проект 6</span></div>
+		<div class="portfolio-item grid" style="background-image: url(img/7.jpg);"><span>Проект 7</span></div>
+		<div class="portfolio-item grid" style="background-image: url(img/8.jpg);"><span>Проект 8</span></div>
+		<div class="portfolio-item grid" style="background-image: url(img/9.jpg);"><span>Проект 9</span></div>
 	</section>
 	<div class="portfolio-all grid">
-		<a href="project.html" class="button1 bouncy" style="animation-delay:0.07s">Переглянути більше</a></li>
+		<button onclick="window.location.href='project.html'" class="button1 bouncy" style="animation-delay:0.07s">
+		<a >Переглянути більше</a></button>
 		
 		
 		
 	</div>
-	<section class="section-ready landing-section" id="particles-js">
+	<section class="section-ready landing-section">
 		<div class="section-ready__team">
 			<p>Про нас</p>
 		</div>
@@ -179,10 +180,26 @@
 			</div>
 
 			<div class="ready-right grid">
-				<div class="ready-right__team grid"><img src="img/anonim.jpg" alt=""></div>
-				<div class="ready-right__team grid"><img src="img/anonim.jpg" alt=""></div>
-				<div class="ready-right__team grid"><img src="img/anonim.jpg" alt=""></div>
-				<div class="ready-right__team grid"><img src="img/anonim.jpg" alt=""></div>
+				<div class="ready-right__team grid">
+					<a href="team.html">
+						<img src="img/dgn11.jpg" alt="">
+					</a>
+				</div>
+				<div class="ready-right__team grid">
+					<a href="team.html">
+						<img src="img/dgn31.jpg" alt="">
+					</a>
+				</div>
+				<div class="ready-right__team grid">
+					<a href="team.html">
+						<img src="img/dgn4.jpg" alt="">
+					</a>
+				</div>
+				<div class="ready-right__team grid">
+					<a href="team.html">
+						<img src="img/dgn21.jpg" alt="">
+					</a>
+				</div>
 			</div>
 
 		</div>
@@ -255,62 +272,62 @@
 	
 	<section class="company-logo">
 		<div class="company-logo__name">
-			<p>Нам довіряють</p>
+			<p>Наші клієнти</p>
 		</div>
 		<div class="company-logo__autoplay">
 			<div class="sl__slide">
-				<img src="images/sl1.jpg" alt="Картинка слайда" class="sl__img">
+				<img src="img/company/1.png" alt="Картинка слайда" class="sl__img">
 			</div>
 			<div class="sl__slide">
-				<img src="images/sl2.jpg" alt="Картинка слайда" class="sl__img">
+				<img src="img/company/3.png" alt="Картинка слайда" class="sl__img">
+				
+			</div>
+			<div class="sl__slide">	
+				<img src="img/company/4.png" alt="Картинка слайда" class="sl__img">
 				
 			</div>
 			<div class="sl__slide">
-				<img src="images/sl3.jpg" alt="Картинка слайда" class="sl__img">
+				<img src="img/company/5.png" alt="Картинка слайда" class="sl__img">
 				
 			</div>
 			<div class="sl__slide">
-				<img src="images/sl4.jpg" alt="Картинка слайда" class="sl__img">
+				<img src="img/company/1.png" alt="Картинка слайда" class="sl__img">
 				
 			</div>
 			<div class="sl__slide">
-				<img src="images/sl5.jpg" alt="Картинка слайда" class="sl__img">
+				<img src="img/company/3.png" alt="Картинка слайда" class="sl__img">
 				
 			</div>
 			<div class="sl__slide">
-				<img src="images/sl6.jpg" alt="Картинка слайда" class="sl__img">
+				<img src="img/company/4.png" alt="Картинка слайда" class="sl__img">
 				
 			</div>
 			<div class="sl__slide">
-				<img src="images/sl7.jpg" alt="Картинка слайда" class="sl__img">
+				<img src="img/company/5.png" alt="Картинка слайда" class="sl__img">
 				
 			</div>
 			<div class="sl__slide">
-				<img src="images/sl8.jpg" alt="Картинка слайда" class="sl__img">
+				<img src="img/company/1.png" alt="Картинка слайда" class="sl__img">
 				
 			</div>
 			<div class="sl__slide">
-				<img src="images/sl9.jpg" alt="Картинка слайда" class="sl__img">
+				<img src="img/company/3.png" alt="Картинка слайда" class="sl__img">
 				
 			</div>
 			<div class="sl__slide">
-				<img src="images/sl10.jpg" alt="Картинка слайда" class="sl__img">
+				<img src="img/company/4.png" alt="Картинка слайда" class="sl__img">
 				
 			</div>
 			<div class="sl__slide">
-				<img src="images/sl11.jpg" alt="Картинка слайда" class="sl__img">
+				<img src="img/company/5.png" alt="Картинка слайда" class="sl__img">
 				
 			</div>
 			<div class="sl__slide">
-				<img src="images/sl12.jpg" alt="Картинка слайда" class="sl__img">
+				<img src="img/company/1.png" alt="Картинка слайда" class="sl__img">
 				
 			</div>
 			<div class="sl__slide">
-				<img src="images/sl13.jpg" alt="Картинка слайда" class="sl__img">
-				
-			</div>
-			<div class="sl__slide">
-				<img src="images/sl14.jpg" alt="Картинка слайда" class="sl__img">
+				<img src="img/company/3.png" alt="Картинка слайда" class="sl__img">
 				
 			</div>
 		</div>
@@ -320,15 +337,15 @@
 
 	<section class="form-section grid">
 		<div class="form-section__left form-item grid">
-			<form action="./telegramform/php/send-message-to-telegram.php" method="POST" id="form-contact"
+			<form action="telegramform/php/send-message-to-telegram.php" method="POST" id="form-contact"
 				class="form-element grid" autocomplete="off">
 				<h2>Давайте домовимось про зустріч...</h2>
 				<p class="form-title">Замовте зворотній з'язок і ми Вам перетелефонуємо.</p>
 				<p class="form-message"></p>
 				<div><input type="text" name="name" class="form-input__name" placeholder="Ім'я" required></div>
 				<div><input type="tel" name="phone" class="form-input__phone" placeholder="Телефон" required></div>
-				<div><input type="email" name="email" class="form-input__email" placeholder="Email" required></div>
-				<div><textarea name="message" class="form-input__message" placeholder="Повідомлення" required cols="40" rows="5"></textarea></div>
+				<div><input type="email" name="email" class="form-input__email" placeholder="Email"></div>
+				<div><textarea name="message" class="form-input__message" placeholder="Повідомлення" cols="40" rows="5"></textarea></div>
 				<div>
 					<input type="submit" class="form-input__button" value="Надіслати">
 				</div>
@@ -382,10 +399,10 @@
 	
 	
 	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAu6Sbnh9MeNLalgDn5mJmN7cJ7aOsXA9s&callback=initMap" async defer></script>
-	<script src="./js/google-map.js"></script>
+	<script src="js/google-map.js"></script>
 
 	
-	<script src="./telegramform/js/telegramform.js"></script>
+	<script src="telegramform/js/telegramform.js"></script>
 	
 	<script type="text/javascript" src="libs/slick/slick.min.js"></script>
 	<script src="js/company.js"></script>
